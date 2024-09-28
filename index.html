@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PercentageHelper - Free Online Percentage Calculator</title>
+    <meta name="description"
+        content="PercentageHelper is a free online tool for quick and easy percentage calculations. Calculate percentages, find percentage increases or decreases, and more.">
+    <meta name="keywords"
+        content="percentagehelper, percentage calculator, percent calculator, percentage increase, percentage decrease">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/logo.webp" sizes="any">
+    <link rel="icon" href="/logo.webp" type="image/svg+html">
+    <link rel="apple-touch-icon" href="/logo.webp">
+    <link rel="canonical" href="https://percentagehelper.xyz/">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-4 flex items-center justify-center">
+        <img src="/logo.webp" alt="Logo" class="h-10 mr-4">
+        <h1 class="text-3xl font-bold">PercentageHelper</h1>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <p class="text-lg mb-8">
+            PercentageHelper is a free online tool to calculate percentages.
+        </p>
+
+        <div class="bg-blue-50 rounded-lg shadow-md p-6 mb-8">
+            <p class="text-sm mb-4">Tip: Calculate a percentage of a number. For example, 20% of 100 is 20.</p>
+            <form id="f1" class="flex flex-wrap items-stretch gap-2">
+                <span class="flex items-center">What is</span>
+                <input type='text' class="flex-grow p-1 border rounded" placeholder="X">
+                <span class="flex items-center">% of</span>
+                <input type='text' class="flex-grow p-1 border rounded" placeholder="Y">
+                <input type="submit" value="Calculate"
+                    class="flex-grow bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">
+                <input type="text" class="flex-grow p-1 border rounded" readonly>
+                <button type="button"
+                    class="flex-grow copy-btn bg-blue-300 text-white px-4 py-2 rounded hover:bg-blue-400 cursor-pointer w-32">
+                    Copy Result
+                </button>
+            </form>
+        </div>
+
+        <div class="bg-green-50 rounded-lg shadow-md p-6 mb-8">
+            <p class="text-sm mb-4">Tip: Find what percentage one number is of another. For example, 20 is 20% of 100.
+            </p>
+            <form id="f2" class="flex flex-wrap items-stretch gap-2">
+                <input type='text' class="flex-grow p-1 border rounded" placeholder="X">
+                <span class="flex items-center">is what % of</span>
+                <input type='text' class="flex-grow p-1 border rounded" placeholder="Y">
+                <input type="submit" value="Calculate"
+                    class="flex-grow bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 cursor-pointer">
+                <input type="text" class="flex-grow p-1 border rounded" readonly>
+                <button type="button"
+                    class="flex-grow copy-btn bg-green-300 text-white px-4 py-2 rounded hover:bg-green-400 cursor-pointer w-32">
+                    Copy Result
+                </button>
+            </form>
+        </div>
+
+        <div class="bg-yellow-50 rounded-lg shadow-md p-6 mb-8">
+            <p class="text-sm mb-4">Tip: Calculate the percentage change between two numbers. For example, from 100 to
+                120 is a 20% increase.</p>
+            <form id="f3" class="flex flex-wrap items-stretch gap-2">
+                <span class="flex items-center">From</span>
+                <input type='text' class="flex-grow p-1 border rounded" placeholder="X">
+                <span class="flex items-center">to</span>
+                <input type='text' class="flex-grow p-1 border rounded" placeholder="Y">
+                <input type="submit" value="Calculate"
+                    class="flex-grow bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 cursor-pointer">
+                <input type="text" class="flex-grow p-1 border rounded" readonly>
+                <button type="button"
+                    class="flex-grow copy-btn bg-yellow-300 text-white px-4 py-2 rounded hover:bg-yellow-400 cursor-pointer w-32">
+                    Copy Result
+                </button>
+            </form>
+        </div>
+
+        <p class="text-sm mb-8">
+            <strong>Tips:</strong> Use tab to move to the next field. Use shift-tab to move to the previous field. Press
+            enter to calculate.
+        </p>
+
+        <!-- Ad placeholder -->
+        <!-- <div class="bg-gray-200 p-4 text-center mb-8">
+            <p>Advertisement</p>
+        </div> -->
+
+        <h2 class="text-2xl font-semibold mb-4">About</h2>
+        <p class="mb-8">
+            This website is designed to help you quickly and easily calculate percentages for a variety of purposes.
+            Whether you're calculating discounts, tips, or trying to figure out how much something has increased or
+            decreased in value, our percentage calculator can help.
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4">FAQ</h2>
+        <h3 class="text-xl font-semibold mb-2">What is a percentage?</h3>
+        <p class="mb-4">
+            Percentage is a way of expressing a number as a fraction of 100. It is commonly used to represent a portion
+            of a whole or to compare two numbers. Percentages are often denoted with the symbol "%".
+        </p>
+
+        <h3 class="text-xl font-semibold mb-2">How do you calculate a percentage?</h3>
+        <p class="mb-4">
+            To calculate a percentage, you typically divide the part (the smaller value) by the whole (the larger
+            value), and then multiply the result by 100. This gives you the percentage value as a number between 0 and
+            100.
+        </p>
+
+        <h3 class="text-xl font-semibold mb-2">Why percentages matter?</h3>
+        <p class="mb-4">
+            Percentages are used in a wide variety of contexts, from calculating discounts and taxes to measuring
+            changes in stock prices and economic indicators. Understanding how percentages work can help you make more
+            informed decisions in various areas, from personal finance to business management.
+        </p>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2023 PercentageHelper. All rights reserved.</p>
+        <nav class="mt-2">
+            <a href="#" class="mx-2">Help</a>
+            <a href="#" class="mx-2">Privacy Policy</a>
+        </nav>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function isValidNumber(n) {
+                return !isNaN(parseFloat(n)) && isFinite(n);
+            }
+
+            function calculatePercentage(form) {
+                var inputs = form.querySelectorAll("input[type=text]");
+                var a = inputs[0].value.replace(",", ".");
+                var b = inputs[1].value.replace(",", ".");
+                var result = 0;
+                var isValid = true;
+
+                inputs[0].style.background = "#fff";
+                inputs[1].style.background = "#fff";
+                inputs[2].value = "";
+
+                if (!isValidNumber(a)) {
+                    inputs[0].style.background = "#fee";
+                    isValid = false;
+                }
+                if (!isValidNumber(b)) {
+                    inputs[1].style.background = "#fee";
+                    isValid = false;
+                }
+
+                if (!isValid) return false;
+
+                switch (form.getAttribute("id")) {
+                    case "f1":
+                        result = (a / 100) * b;
+                        break;
+                    case "f2":
+                        result = (a / b) * 100;
+                        break;
+                    case "f3":
+                        result = ((b - a) / a) * 100;
+                        break;
+                }
+
+                inputs[2].value = result.toFixed(2);
+            }
+
+            document.querySelectorAll("input[type=submit]").forEach(function (button) {
+                button.onclick = function (e) {
+                    e.preventDefault();
+                    calculatePercentage(this.closest("form"));
+                };
+            });
+
+            // Add copy result functionality
+            document.querySelectorAll(".copy-btn").forEach(function (button) {
+                button.onclick = function () {
+                    var form = this.closest("form");
+                    var result = form.querySelector("input[type=text]:last-of-type").value;
+                    if (result) {
+                        navigator.clipboard.writeText(result).then(() => {
+                            var originalText = this.textContent;
+                            this.textContent = "Copied";
+                            setTimeout(() => {
+                                this.textContent = originalText;
+                            }, 2000);
+                        });
+                    }
+                };
+            });
+        });
+    </script>
+</body>
+
+</html>
